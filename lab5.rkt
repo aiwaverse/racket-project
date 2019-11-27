@@ -12,9 +12,9 @@
 ;; m: Número entre 1 e 3, material do prédio, onde 1 é o mais fŕagil, e 3 o mais resistente
 ;; i: Número, número de impactos que o pŕedio pode receber
 ;; constantes:
-(define PREDIO1 (make-predio 50 20 50 3 5))
-(define PREDIO2 (make-predio 70 20 100 1 0))
-(define PREDIO3 (make-predio 90 30 200 2 0))  
+(define PREDIO1 (make-predio 50 20 50 3 0))
+(define PREDIO2 (make-predio 70 20 100 2 0))
+(define PREDIO3 (make-predio 90 30 200 3 0))  
 (define CENA-LARGURA 500)
 (define CENA-ALTURA 400)
 (define COR-MATERIAL1 "DarkMagenta")
@@ -222,7 +222,7 @@
            [(= (predio-impactos pred) 1)
             "red"]
            [(= (predio-impactos pred) 2)
-            "DarkOrange"]
+            "OrangeRed"]
            [(= (predio-impactos pred) 3)
             "Orange"]
            [(= (predio-impactos pred) 4)
